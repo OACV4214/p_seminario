@@ -1,0 +1,261 @@
+/* TestCases.css */
+
+.test-cases-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+}
+
+.test-cases-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Botón de crear caso de prueba */
+.create-test-case-button {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 18px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.create-test-case-button:hover {
+    background-color: #006bb3;
+}
+
+/* Tabla de casos de prueba */
+.test-cases-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.test-cases-table th,
+.test-cases-table td {
+    padding: 14px;
+    text-align: left;
+}
+
+.test-cases-table th {
+    background-color: #f3f6f9;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.test-cases-table tr:nth-child(even) {
+    background-color: #f9fbfc;
+}
+
+.test-cases-table tr:hover {
+    background-color: #eef3f7;
+}
+
+.test-cases-table td {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilos para los botones de acciones */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.action-buttons button {
+    padding: 6px 12px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón de modificar */
+.edit-button {
+    background-color: #266eff;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #fb8c00;
+}
+
+/* Botón de eliminar */
+.delete-button {
+    background-color: #f26d6d;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #e64c4c;
+}
+
+/* Botón de regreso */
+.back-button {
+    background-color: #337ab7;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #286090;
+}
+
+/* Mensaje de confirmación */
+.confirmation-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+}
+
+/* Modal overlay y contenido */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    width: 420px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #333;
+}
+
+.modal-content h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.modal-content textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.save-button {
+    background-color: #007acc;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.save-button:hover {
+    background-color: #006bb3;
+}
+
+.close-button {
+    background-color: #ccc;
+    color: #333;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.close-button:hover {
+    background-color: #bbb;
+}
+
+
+.help-text {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.code-example {
+    background-color: #f5f5f5;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 13px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-height: 90vh; /* Limita la altura máxima al 90% de la ventana */
+    overflow-y: auto; /* Agrega scroll vertical si el contenido excede la altura */
+    border-radius: 8px;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+/* Opcional: Puedes ajustar el ancho en pantallas pequeñas */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+    }
+}

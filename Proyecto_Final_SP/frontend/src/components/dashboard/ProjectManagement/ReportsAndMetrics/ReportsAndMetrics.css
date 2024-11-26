@@ -1,0 +1,171 @@
+/* ReportsAndMetrics.css */
+
+.reports-and-metrics-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reports-and-metrics-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.metrics-content {
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.metrics-content h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.metrics-content p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.metrics-content .coverage-value,
+.metrics-content .defect-stats,
+.metrics-content .avg-resolution-time {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.metrics-content .highlight {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.chart-container {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.chart {
+    width: 80%;
+    height: 400px;
+    background-color: #eef4fb;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: 1.5em;
+}
+
+.table-container {
+    margin-top: 40px;
+}
+
+.table-title {
+    font-size: 1.6em;
+    color: #444;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.metrics-table th, .metrics-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.metrics-table th {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1em;
+}
+
+.metrics-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.metrics-table tr:hover {
+    background-color: #e8f0ff;
+}
+
+@media (max-width: 768px) {
+    .reports-and-metrics-container {
+        padding: 20px;
+    }
+
+    .metrics-content {
+        padding: 15px;
+    }
+
+    .back-button {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .chart {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+
+.reports-and-metrics-container {
+    padding: 20px;
+  }
+  
+  .metrics-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .metrics-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    margin-bottom: 20px;
+  }
+  

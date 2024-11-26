@@ -1,0 +1,203 @@
+/* Estilo de contenedor */
+.project-management-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Botones de la cabecera */
+.back-button, .create-project-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.back-button {
+    background-color: #4a5568;
+}
+
+.back-button:hover {
+    background-color: #2d3748;
+}
+
+.create-project-button {
+    background-color: #4299e1;
+}
+
+.create-project-button:hover {
+    background-color: #3182ce;
+}
+
+/* Tabla de proyectos */
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-table th,
+.project-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.project-table th {
+    background-color: #edf2f7;
+    color: #2d3748;
+    font-weight: bold;
+}
+
+.project-table tr:hover {
+    background-color: #f7fafc;
+}
+
+/* Botones de acciones */
+.edit-button, .delete-button, .preview-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.edit-button {
+    background-color: #38a169;
+}
+
+.delete-button {
+    background-color: #e53e3e;
+}
+
+.preview-button {
+    background-color: #3182ce;
+}
+
+.edit-button:hover {
+    background-color: #2f855a;
+}
+
+.delete-button:hover {
+    background-color: #c53030;
+}
+
+.preview-button:hover {
+    background-color: #2b6cb0;
+}
+
+/* Estilos del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.save-button, .close-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.save-button {
+    background-color: #38a169;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #2f855a;
+}
+
+.close-button {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.close-button:hover {
+    background-color: #c53030;
+}
+
+/* Mensaje de confirmación */
+.confirmation-message {
+    background-color: #e6fffa;
+    color: #2c7a7b;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #b2f5ea;
+}

@@ -1,0 +1,177 @@
+/* UserManagement.css */
+
+.user-management-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Fondo claro para el contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th, .user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #080e08; /* Fondo verde para el encabezado */
+    color: white;
+    font-weight: bold;
+}
+
+.user-table tr:hover {
+    background-color: #f1f1f1; /* Cambia el fondo cuando pasas el mouse sobre una fila */
+}
+
+.user-table tr:last-child td {
+    border-bottom: none; /* Elimina la línea inferior de la última fila */
+}
+
+.edit-button, .delete-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.edit-button:hover {
+    background-color: #1976d2;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.back-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 100px;
+    width: auto;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #d32f2f;
+}
+
+
+/* UserManagement.css */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal-content button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.modal-content .delete-button {
+    background-color: #f44336;
+}
+
+.modal-content button:hover {
+    opacity: 0.9;
+}
+
+
+/* UserManagement.css */
+
+.confirmation-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en una columna */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.back-button, .create-button {
+    margin-top: 10px;
+}
+
+.create-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.create-button:hover {
+    background-color: #388e3c;
+}

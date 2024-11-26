@@ -1,0 +1,89 @@
+/* Dashboard.css */
+body {
+    background-color: #cce7ff; /* Azul pastel claro */
+    font-family: Arial, sans-serif;
+}
+
+
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto; /* Centra el contenido en la pantalla y agrega un margen superior */
+    background-color: #f9f9f9; /* Fondo claro para el contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 100px;
+    width: auto;
+    text-align: center;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.manage-users-button {
+    background-color: #4caf50; /* Color verde para el botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.manage-users-button:hover {
+    background-color: #388e3c; /* Color más oscuro en el hover */
+}
+
+/* src/components/dashboard/Dashboard.css */
+.manage-projects-button {
+    background-color: #4CAF50; /* Cambia el color según tu preferencia */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.manage-projects-button:hover {
+    background-color: #45a049;
+}
